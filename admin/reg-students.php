@@ -85,7 +85,7 @@ header('location:reg-students.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>NO</th>
                                             <th>Student ID</th>
                                             <th>Student Name</th>
                                             <th>Email id </th>

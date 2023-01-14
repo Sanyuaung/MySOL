@@ -6,7 +6,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <h1>Book Management System</h1>
+            <h1 class="text-info">Book Management System</h1>
 
         </div>
 
@@ -22,11 +22,11 @@
             <div class="col-md-12">
                 <div class="navbar-collapse collapse ">
                     <ul id="menu-top" class="nav navbar-nav navbar-right">
-                        <li><a href="dashboard.php" class="menu-top-active">DASHBOARD</a></li>
+                        <li><a href="dashboard.php">DASHBOARD</a></li>
 
                         <li>
-                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Categories <i
-                                    class="fa fa-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Categories
+                                <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="add-category.php">Add
                                         Category</a></li>
@@ -56,16 +56,17 @@
                         </li>
 
                         <li>
-                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Issue Books <i
-                                    class="fa fa-angle-down"></i></a>
+                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Issue Books
+                                <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="issue-book.php">Issue New
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="issue-book.php">Issue
+                                        New
                                         Book</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1"
                                         href="manage-issued-books.php">Manage Issued Books</a></li>
                             </ul>
                         </li>
-                        <li><a href="reg-students.php">Reg Students</a></li>
+                        <li><a href="reg-students.php">Reg Users</a></li>
 
                         <li><a href="change-password.php">Change Password</a></li>
                     </ul>

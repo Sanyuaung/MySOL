@@ -48,7 +48,7 @@ else{?>
 
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="alert alert-success back-widget-set text-center">
-                        <i class="fa fa-book fa-5x"></i>
+                        <a class="text-success" href="manage-books.php"><i class="fa fa-book fa-5x"></i></a>
                         <?php 
 $sql ="SELECT id from tblbooks ";
 $query = $dbh -> prepare($sql);
@@ -66,7 +66,7 @@ $listdbooks=$query->rowCount();
 
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="alert alert-info back-widget-set text-center">
-                        <i class="fa fa-bars fa-5x"></i>
+                        <a class="text-danger" href="manage-issued-books.php"><i class="fa fa-bars fa-5x"></i></a>
                         <?php 
 $sql1 ="SELECT id from tblissuedbookdetails ";
 $query1 = $dbh -> prepare($sql1);
@@ -99,7 +99,7 @@ $returnedbooks=$query2->rowCount();
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="alert alert-danger back-widget-set text-center">
-                        <i class="fa fa-users fa-5x"></i>
+                        <a href="reg-students.php"><i class="fa fa-users fa-5x"></i></a>
                         <?php 
 $sql3 ="SELECT id from tblstudents where Status=1";
 $query3 = $dbh -> prepare($sql3);
@@ -120,7 +120,7 @@ $regstds=$query3->rowCount();
 
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="alert alert-success back-widget-set text-center">
-                        <i class="fa fa-user fa-5x"></i>
+                        <a href="manage-authors.php"><i class="fa fa-user fa-5x"></i></a>
                         <?php 
 $sq4 ="SELECT id from tblauthors ";
 $query4 = $dbh -> prepare($sq4);
@@ -138,10 +138,11 @@ $listdathrs=$query4->rowCount();
 
                 <div class="col-md-3 col-sm-3 rscol-xs-6">
                     <div class="alert alert-info back-widget-set text-center">
-                        <i class="fa fa-file-archive-o fa-5x"></i>
+                        <a class="text-success" href="manage-categories.php"><i
+                                class="fa fa-file-archive-o fa-5x"></i></a>
                         <?php 
 $sql5 ="SELECT id from tblcategory ";
-$query5 = $dbh -> prepare($sql1);
+$query5 = $dbh -> prepare($sql5);
 $query5->execute();
 $results5=$query5->fetchAll(PDO::FETCH_OBJ);
 $listdcats=$query5->rowCount();

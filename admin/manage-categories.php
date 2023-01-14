@@ -113,7 +113,7 @@ header('location:manage-categories.php');
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>NO</th>
                                             <th>Category</th>
                                             <th>Status</th>
                                             <th>Creation Date</th>

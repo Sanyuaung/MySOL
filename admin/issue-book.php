@@ -12,7 +12,7 @@ if(isset($_POST['issue']))
 {
 $studentid=strtoupper($_POST['studentid']);
 $bookid=$_POST['bookdetails'];
-$sql="INSERT INTO  tblissuedbookdetails(StudentID,BookId) VALUES(:studentid,:bookid)";
+$sql="INSERT INTO  tblissuedbookdetails(StudentID,BookId,RetrunStatus) VALUES(:studentid,:bookid,0)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':studentid',$studentid,PDO::PARAM_STR);
 $query->bindParam(':bookid',$bookid,PDO::PARAM_STR);
@@ -112,7 +112,7 @@ header('location:manage-issued-books.php');
                         <form role="form" method="post">
 
                             <div class="form-group">
-                                <label>Srtudent id<span style="color:red;">*</span></label>
+                                <label>Student id<span style="color:red;">*</span></label>
                                 <input class="form-control" type="text" name="studentid" id="studentid"
                                     onBlur="getstudent()" autocomplete="off" required />
                             </div>
